@@ -1,0 +1,60 @@
+.hero {
+    min-height: calc(100vh - 81px);
+    margin: 0 auto;
+    // padding: 230px 0 454px;
+    background-image: url(../images/hero@1x.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-mini-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background: url(../images/hero@2x.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-mini-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 228dpi),
+    screen and (min-resolution: 3dppx) {
+        background: url(../images/hero@3x.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        padding-top: 16%;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: calc(110/96);
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: calc(41/36);
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        font-size: 13px;
+        line-height: calc(15/13);
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        padding-top: 6px;
+        font-size: 13px;
+    }
+
+
+}

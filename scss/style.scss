@@ -1,0 +1,28 @@
+
+@import "./utils/_global";
+@import "./components/_fonts";
+@import "./utils/_vars";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/_buy-btn";
+
+.basket {
+    position: relative;
+}
+
+.basket span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 0;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 50%;
+    right: -2px;
+    bottom: 0;
+}

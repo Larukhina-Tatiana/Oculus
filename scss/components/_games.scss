@@ -1,0 +1,68 @@
+.games {
+    margin-bottom: 100px;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__descr {
+        padding-right: 10px;
+
+        &-text {
+            margin-top: 8px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__link {
+        width: 225px;
+        padding: 16px 15px 12px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid #BC10D8;
+        // border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px 22px 20px;
+        border: 1px solid #BC10D8;
+
+        &-img {
+            margin-bottom: 10px;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: calc(28/24);
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+        &-text {
+            margin-bottom: 40px;
+        }
+
+        &-link {
+            margin-top: auto;
+            background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+
+}

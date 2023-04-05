@@ -1,0 +1,50 @@
+.oculus {
+    margin-bottom: 110px;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+    // min-width: 1687px;
+
+    &__title {
+        position: absolute;
+        font-weight: 700;
+        font-size: 400px;
+        line-height: calc(400/400);
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: -1;
+        animation: line-text 6s linear 1s infinite;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+        // position: absolute;
+        width: 346px;
+        margin-right: auto;
+        margin-left: auto;
+        // top: 50%;
+        // left: 50%;
+        // transform: translateX(-50%);
+    }
+
+    & .buy-btn {
+        margin: 0 auto;
+    }
+
+    @keyframes line-text {
+        from {
+            transform: translateX(100%);
+            transform-origin: left center;
+        }
+        to {
+            transform: translateX(-100%);
+            transform-origin: right center;
+        }
+        
+    }
+
+
+}

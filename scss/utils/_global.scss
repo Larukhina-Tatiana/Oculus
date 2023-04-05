@@ -32,6 +32,14 @@ html{
   -webkit-text-fill-color: transparent;
 }
 
+.item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(28/24);
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
 body {
   font-family: 'Helvetica', sans-serif;
   font-style: normal;
@@ -60,7 +68,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
+  // width: 100%;
 }
 
 picture {

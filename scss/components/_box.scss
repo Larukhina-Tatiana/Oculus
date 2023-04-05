@@ -1,0 +1,33 @@
+.box {
+    margin-bottom: 100px;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px 30px;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__text--gradient {
+        font-size: 36px;
+        line-height: 41px;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__item--one {
+        grid-row: 1/-1;
+    }
+
+
+}

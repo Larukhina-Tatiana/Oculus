@@ -1,0 +1,59 @@
+.accessories {
+    margin-bottom: 100px;
+
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        max-width: 630px;
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 18px;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+
+        & .item-title {
+            min-height: 56px;
+        }
+
+        &-info {
+            margin-top: auto;
+            margin-bottom: 42px;
+        }
+
+        &-price {
+            margin-top: auto;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: var(--black);
+        }
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        width: 100%;
+        margin-top: auto;
+        padding: 6px;
+        font-weight: 700;
+        text-align: center;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+    }
+}

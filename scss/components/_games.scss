@@ -29,29 +29,22 @@
         background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        border: 1px solid #BC10D8;
-        // border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
-
-
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         padding: 20px 15px 22px 20px;
-        border: 1px solid #BC10D8;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 
         &-img {
             margin-bottom: 10px;
         }
 
-        &-title {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: calc(28/24);
-            color: var(--black);
-            margin-bottom: 10px;
-        }
+        
         &-text {
             margin-bottom: 40px;
         }

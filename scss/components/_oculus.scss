@@ -30,6 +30,10 @@
         margin: 0 auto;
     }
 
+    & .buy-btn__price {
+        background-color: #fff;
+    }
+
     @keyframes line-text {
         from {
             transform: translateX(100%);

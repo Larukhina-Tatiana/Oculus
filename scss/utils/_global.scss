@@ -47,6 +47,8 @@ body {
   font-size: 16px;
   line-height: calc(18/16);
   color: var(--gray);
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -105,3 +107,4 @@ button {
   clip-path: inset(50%);
   margin: -1px;
 }
+

@@ -56,4 +56,22 @@
         border: 1px solid;
         border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
     }
+
+    @media screen and (width < 992px){
+        &__inner {
+            grid-template-columns: repeat(2, 2fr);
+            gap: 30px;
+        }
+    }
+
+    @media screen and (width < 568px){
+        &__inner {
+            grid-template-columns: repeat(1, 2fr);
+            gap: 20px;
+        }
+
+        &__text {
+            font-size: 28px;
+        }
+    }
 }

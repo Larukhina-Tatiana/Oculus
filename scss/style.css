@@ -47,6 +47,8 @@ body {
   font-size: 16px;
   line-height: 1.125;
   color: var(--gray);
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -139,6 +141,57 @@ button {
   display: flex;
   gap: 20px;
 }
+@media screen and (width < 820px) {
+  .nav-menu__list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+  }
+  .nav-menu__item {
+    font-size: 24px;
+  }
+  .nav .open {
+    transform: translateX(0%);
+  }
+}
+@media screen and (width < 568px) {
+  .nav {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media screen and (width < 420px) {
+  .nav-menu__list {
+    width: 100%;
+  }
+}
+
+.menu-btn {
+  display: none;
+  width: 40px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-btn span {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+@media screen and (width < 820px) {
+  .menu-btn {
+    display: flex;
+  }
+}
 
 .hero {
   padding-bottom: 454px;
@@ -188,6 +241,28 @@ button {
   padding-top: 6px;
   font-size: 13px;
 }
+@media screen and (width < 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 66px;
+  }
+  .hero__subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (width < 420px) {
+  .hero {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+  }
+}
 
 .buy-btn {
   display: flex;
@@ -206,7 +281,14 @@ button {
 .buy-btn__price {
   padding: 20px 105px;
   color: var(--gray);
-  background-color: #fff;
+  background-color: var(--white);
+}
+@media screen and (width < 624px) {
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 
 .features {
@@ -219,6 +301,14 @@ button {
 .features__title {
   flex-basis: 300px;
   padding-right: 10px;
+}
+@media screen and (width < 568px) {
+  .features {
+    padding-bottom: 20px;
+  }
+  .features__titles {
+    display: block;
+  }
 }
 
 .tabs {
@@ -266,6 +356,43 @@ button {
 .tabs__content-img {
   width: auto;
   grid-row: 1/-1;
+  align-self: stretch;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (width < 992px) {
+  .tabs {
+    display: block;
+  }
+  .tabs__btn {
+    display: block;
+    -moz-column-count: 2;
+         column-count: 2;
+    margin-bottom: 10px;
+  }
+  .tabs__btn-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (width < 568px) {
+  .tabs__content-item {
+    display: block;
+    height: 0;
+    position: relative;
+  }
+  .tabs__btn-item--active {
+    height: auto;
+  }
+  .tabs__content {
+    height: 537px;
+  }
+}
+@media screen and (width < 420px) {
+  .tabs__btn {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
 
 .video {
@@ -290,6 +417,12 @@ button {
   font-size: 13px;
   line-height: 1.1538461538;
   color: var(--white);
+}
+@media screen and (width < 568px) {
+  .video {
+    margin-top: 20px;
+    width: auto;
+  }
 }
 
 .games {
@@ -341,6 +474,18 @@ button {
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (width < 992px) {
+  .games__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media screen and (width < 568px) {
+  .games__inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
 }
 
 .oculus {
@@ -418,6 +563,22 @@ button {
 }
 .box__item--one {
   grid-row: 1/-1;
+}
+@media screen and (width < 820px) {
+  .box__inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (width < 568px) {
+  .box__inner {
+    display: block;
+  }
+  .box__img {
+    width: 100%;
+  }
+  .box__text {
+    margin-bottom: 10px;
+  }
 }
 
 .promo {
@@ -497,6 +658,21 @@ button {
   -o-border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
      border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 }
+@media screen and (width < 992px) {
+  .accessories__inner {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+  }
+}
+@media screen and (width < 568px) {
+  .accessories__inner {
+    grid-template-columns: repeat(1, 2fr);
+    gap: 20px;
+  }
+  .accessories__text {
+    font-size: 28px;
+  }
+}
 
 .subscribe {
   margin-bottom: 100px;
@@ -571,6 +747,14 @@ button {
   align-self: end;
   margin-left: auto;
 }
+@media screen and (width < 820px) {
+  .subscribe__inner {
+    display: block;
+  }
+  .subscribe__form-inner {
+    margin-bottom: 20px;
+  }
+}
 
 .footer {
   margin-bottom: 40px;
@@ -578,11 +762,38 @@ button {
   border-top: 1px solid var(--light-grey);
   border-bottom: 1px solid var(--light-grey);
 }
+@media screen and (width < 1140px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .nav-menu__list {
+    display: none;
+  }
+  .footer .nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (width < 568px) {
+  .footer .nav {
+    grid-template-columns: 1fr;
+    height: auto;
+    align-self: center;
+  }
+}
 
 .social {
   display: flex;
   gap: 20px;
   justify-self: end;
+  align-items: center;
+}
+@media screen and (width < 568px) {
+  .social {
+    margin-top: 20px;
+    justify-self: center;
+    gap: 50px;
+  }
 }
 
 .logo {

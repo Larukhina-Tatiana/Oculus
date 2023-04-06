@@ -65,4 +65,15 @@
         align-self: end;
         margin-left: auto;
     }
+
+    @media screen and (width < 820px){
+        &__inner {
+            display: block;
+        }
+
+        &__form-inner {
+            margin-bottom: 20px;
+        }
+    }
+
 }

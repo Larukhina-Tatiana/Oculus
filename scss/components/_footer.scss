@@ -3,4 +3,26 @@
     padding: 20px 0;
     border-top: 1px solid var(--light-grey);
     border-bottom: 1px solid var(--light-grey);
+
+    @media screen and (width < 1140px){
+
+        display: flex;
+        justify-content: space-between;
+
+        & .nav-menu__list {
+            display: none;
+        }
+
+        & .nav {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (width < 568px){
+        & .nav {
+            grid-template-columns: 1fr;
+height: auto;
+            align-self: center;
+        }
+    }
 }

@@ -2,4 +2,12 @@
     display: flex;
     gap: 20px;
     justify-self: end;
+    align-items: center;
+
+    @media screen and (width < 568px){
+        margin-top: 20px;
+
+        justify-self: center;
+        gap: 50px;
+    }
 }

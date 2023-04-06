@@ -51,6 +51,44 @@
     &__content-img {
         width: auto;
         grid-row: 1/-1;
-        // align-self: stretch;
+        align-self: stretch;
+        object-fit: cover;
+    }
+
+    @media screen and (width < 992px) {
+        display: block;
+
+        &__btn {
+            display: block;
+            column-count: 2;
+            margin-bottom: 10px;
+
+            &-item {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (width < 568px) {
+        &__content-item {
+            display: block;
+            height: 0;
+            position: relative;
+        }
+        &__btn-item--active {
+            height: auto;
+        }
+
+        &__content {
+            height: 537px;
+        }
+    }
+
+    @media screen and (width < 420px) {
+        &__btn {
+            column-count: 1;
+
+        }
     }
 }

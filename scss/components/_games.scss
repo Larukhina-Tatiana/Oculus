@@ -55,7 +55,21 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+    }
+    @media screen and (width < 992px) {
 
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+    }
+
+    @media screen and (width < 568px) {
+
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 25px;
+        }
     }
 
 }

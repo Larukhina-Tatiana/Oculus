@@ -16,7 +16,13 @@
     &__price {
         padding: 20px 105px;
         color: var(--gray);
-        background-color: #fff; 
+        // background-color: #fff; 
+        background-color: var(--white);
+    }
 
+    @media screen and (width < 624px){
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
     }
 }

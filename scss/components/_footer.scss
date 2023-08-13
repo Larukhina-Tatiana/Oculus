@@ -4,7 +4,7 @@
     border-top: 1px solid var(--light-grey);
     border-bottom: 1px solid var(--light-grey);
 
-    @media screen and (width < 1140px){
+    @media screen and (width < 1140px) {
 
         display: flex;
         justify-content: space-between;
@@ -18,10 +18,10 @@
         }
     }
 
-    @media screen and (width < 568px){
+    @media screen and (width < 568px) {
         & .nav {
             grid-template-columns: 1fr;
-height: auto;
+            height: auto;
             align-self: center;
         }
     }
